@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מערכת 3 - פילוח משחקים פופולריים</title>
+    <title>מערכת 1 - השפעת DLC על מכירות</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -25,12 +25,11 @@
             font-size: 2em;
         }
         .description {
-            background: rgbaGuy {
-                background: rgba(255, 255, 255, 0.1);
-                padding: 20px;
-                border-radius: 10px;
-                margin-bottom: 30px;
-            }
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
         .tableau-container {
             width: 100%;
             height: 600px;
@@ -53,10 +52,10 @@
 <body>
     <div class="container">
         <header>
-            <h1>מערכת 3 - פילוח משחקים פופולריים: מחיר, קושי והעדפות דמות</h1>
+            <h1>מערכת 1 - השפעת רכישת DLC על מכירות משחקי FromSoftware</h1>
         </header>
         <section class="description">
-            <p>דשבורד זה מפלח את המשחקים הפופולריים של FromSoftware לפי מחיר, רמת קושי והעדפות דמויות, ומספק תובנות על גורמי ההצלחה של המשחקים.</p>
+            <p>דשבורד זה מציג ניתוח של השפעת רכישות תוכן להורדה (DLC) על מכירות משחקי FromSoftware. התובנות המוצגות כאן מאפשרות הבנה של דפוסי רכישה והשפעתם על ההכנסות.</p>
         </section>
         <section class="tableau-container">
             <div id="tableauViz"></div>
@@ -67,7 +66,7 @@
     <script>
         function initViz() {
             const containerDiv = document.getElementById("tableauViz");
-            const vizUrl = "https://public.tableau.com/views/Book1_17457679258910/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+            const vizUrl = "https://public.tableau.com/views/Book1_17457679258910/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
             const options = {
                 width: '100%',
                 height: '600px',
