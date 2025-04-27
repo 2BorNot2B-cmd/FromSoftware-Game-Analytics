@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FromSoftware Game Analytics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .intro {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FromSoftware Game Analytics</h1>
+            <p>מערכת ויזואליזציה מתקדמת לקבלת החלטות בחברת המשחקים FromSoftware</p>
+        </header>
+        <section class="intro">
+            <h2>מטרות המערכת</h2>
+            <p>מערכת זו מספקת תובנות עמוקות על נתוני מכירות, העדפות שחקנים וניתוח ביצועים של משחקי FromSoftware. באמצעות ויזואליזציות מתקדמות, אנו מאפשרים קבלת החלטות מושכלת לשיפור אסטרטגיות שיווק ופיתוח משחקים.</p>
+        </section>
+        <section class="buttons">
+            <a href="dash1.html" class="btn">מערכת 1 - השפעת רכישת DLC על מכירות</a>
+            <a href="dash2.html" class="btn">מערכת 2 - קרב הפלטפורמות</a>
+            <a href="dash3.html" class="btn">מערכת 3 - פילוח משחקים פופולריים</a>
+        </section>
+        <footer>
+            <p>&copy; 2025 FromSoftware Game Analytics. כל הזכויות שמורות.</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

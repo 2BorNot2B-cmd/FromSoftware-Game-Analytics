@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת 3 - פילוח משחקים פופולריים</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        .description {
+            background: rgbaGuy {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        .tableau-container {
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px 0;
+        }
+        .back-btn:hover {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>מערכת 3 - פילוח משחקים פופולריים: מחיר, קושי והעדפות דמות</h1>
+        </header>
+        <section class="description">
+            <p>דשבורד זה מפלח את המשחקים הפופולריים של FromSoftware לפי מחיר, רמת קושי והעדפות דמויות, ומספק תובנות על גורמי ההצלחה של המשחקים.</p>
+        </section>
+        <section class="tableau-container">
+            <div id="tableauViz"></div>
+        </section>
+        <a href="index.html" class="back-btn">חזור לדף הראשי</a>
+    </div>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script>
+        function initViz() {
+            const containerDiv = document.getElementById("tableauViz");
+            const vizUrl = "https://public.tableau.com/views/Book1_17457679258910/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+            const options = {
+                width: '100%',
+                height: '600px',
+                hideTabs: true,
+                hideToolbar: true
+            };
+            new tableau.Viz(containerDiv, vizUrl, options);
+        }
+        window.onload = initViz;
+    </script>
+</body>
+</html>
